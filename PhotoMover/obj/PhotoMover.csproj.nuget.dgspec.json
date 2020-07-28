@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ferna\\Documents\\Programming\\C-Sharp_Projects\\PhotoMover\\PhotoMover.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ferna\\Documents\\Programming\\C-Sharp_Projects\\PhotoMover\\PhotoMover.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ferna\\Documents\\Programming\\C-Sharp_Projects\\PhotoMover\\PhotoMover.csproj",
+        "projectName": "PhotoMover",
+        "projectPath": "C:\\Users\\ferna\\Documents\\Programming\\C-Sharp_Projects\\PhotoMover\\PhotoMover.csproj",
+        "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferna\\Documents\\Programming\\C-Sharp_Projects\\PhotoMover\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MetadataExtractor": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

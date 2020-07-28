@@ -1,0 +1,78 @@
+﻿<Window x:Name="Photo_Mover" x:Class="PhotoMover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoMover"
+        mc:Ignorable="d"
+        Title="Photo Mover" Height="594" Width="703" ShowInTaskbar="False">
+    <Grid Height="580">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="246*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="245*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="pictureBox1" HorizontalAlignment="Left" Height="118" Margin="246,27,0,0" VerticalAlignment="Top" Width="175" Source="/bin/camera_clipart.JPG" RenderTransformOrigin="0.403,0.489" Grid.ColumnSpan="8"/>
+        <TextBox x:Name="Textbox_source" HorizontalAlignment="Left" Margin="32,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="518" Height="27" Grid.ColumnSpan="10"/>
+        <TextBox x:Name="Textbox_destination" HorizontalAlignment="Left" Margin="32,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="518" Height="28" Grid.ColumnSpan="10"/>
+        <Button x:Name="button_source" Click="Source_button_Click" Content="Browse" HorizontalAlignment="Left" Margin="106,163,0,0" VerticalAlignment="Top" Width="94" Height="27" Grid.Column="9"/>
+        <Label x:Name="label_browse_source" Content="Source Directory" HorizontalAlignment="Left" Margin="32,132,0,0" VerticalAlignment="Top" Width="114"/>
+        <Label x:Name="label_browse_destination" Content="Destination Directory" HorizontalAlignment="Left" Margin="32,190,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button x:Name="button_destination" Click="Destination_button_Click" Content="Browse" HorizontalAlignment="Left" Margin="106,221,0,0" VerticalAlignment="Top" Width="94" Height="28" IsCancel="True" Grid.Column="9"/>
+        <ProgressBar x:Name="progressbar1" HorizontalAlignment="Left" Height="21" Margin="149,491,0,0" VerticalAlignment="Top" Width="356" Grid.ColumnSpan="10"/>
+        <Label x:Name="file_Count" Content="Number fo Files" HorizontalAlignment="Left" Margin="149,465,0,0" VerticalAlignment="Top" Grid.ColumnSpan="10" Width="339"/>
+        <Button x:Name="button_move" Content="Move Files" Margin="91,323,37,0" VerticalAlignment="Top" Height="25" IsCancel="True" Click="button_move_Click" Grid.Column="9"/>
+        <Label Content="PHOTO MOVER" HorizontalAlignment="Left" Margin="214,-14,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" Grid.ColumnSpan="10" Width="274"/>
+        <CheckBox x:Name="movies_checkBox" Content="Organize movies" HorizontalAlignment="Left" Margin="91,290,0,0" VerticalAlignment="Top" Checked="movies_checkBox_Checked" Grid.Column="9"/>
+        <CheckBox x:Name="pictures_CheckBox" Content="Organize pictures" HorizontalAlignment="Left" Margin="91,270,0,0" VerticalAlignment="Top" Width="117" Checked="pictures_CheckBox_Checked" Grid.Column="9"/>
+        <ListBox x:Name="photos_listBox" Margin="32,285,46,129" SelectionChanged="photos_listBox_SelectionChanged" >
+            <CheckBox x:Name="JPG" Content=".JPG" Checked="JPG_Checked" Unchecked="JPG_Checked" IsChecked="True"/>
+            <CheckBox x:Name="JPE" Content=".JPE" IsChecked="True" Checked="JPE_Checked" Unchecked="JPE_Checked"/>
+            <CheckBox x:Name="JPEG" Content=".JPEG" IsChecked="True" Checked="JPEG_Checked" Unchecked="JPEG_Checked"/>
+            <CheckBox x:Name="BMP" Content=".BMP" IsChecked="True" Checked="BMP_Checked" Unchecked="BMP_Checked"/>
+            <CheckBox x:Name="GIF" Content=".GIF" IsChecked="True" Checked="GIF_Checked" Unchecked="GIF_Checked"/>
+            <CheckBox x:Name="PNG" Content=".PNG" IsChecked="True" Checked="PNG_Checked" Unchecked="PNG_Checked"/>
+            <CheckBox x:Name="EPS" Content=".EPS" IsChecked="True" Checked="EPS_Checked" Unchecked="EPS_Checked"/>
+            <CheckBox x:Name="HEIF" Content=".HEIF" IsChecked="True" Checked="HEIF_Checked" Unchecked="HEIF_Checked"/>
+            <CheckBox x:Name="HEIC" Content=".HEIC" IsChecked="True" Checked="HEIC_Checked" Unchecked="HEIC_Checked"/>
+            <CheckBox x:Name="ICO" Content=".ICO" IsChecked="True" Checked="ICO_Checked" Unchecked="ICO_Checked"/>
+            <CheckBox x:Name="JFIF" Content=".JFIF" IsChecked="True" Checked="JFIF_Checked" Unchecked="JFIF_Checked"/>
+            <CheckBox x:Name="Netpbm" Content=".Netpbm" IsChecked="True" Checked="Netpbm_Checked" Unchecked="Netpbm_Checked"/>
+            <CheckBox x:Name="PCX" Content=".PCX" IsChecked="True" Checked="PCX_Checked" Unchecked="PCX_Checked"/>
+            <CheckBox x:Name="PSD" Content=".PSD" IsChecked="True" Checked="PSD_Checked" Unchecked="PSD_Checked"/>
+            <CheckBox x:Name="TGA" Content=".TGA" IsChecked="True" Checked="TGA_Checked" Unchecked="TGA_Checked"/>
+            <CheckBox x:Name="TIFF" Content=".TIFF" IsChecked="True" Checked="TIFF_Checked" Unchecked="TIFF_Checked"/>
+            <CheckBox x:Name="WebP" Content=".WebP" IsChecked="True" Checked="WebP_Checked" Unchecked="WebP_Checked"/>
+            <CheckBox x:Name="ARW" Content=".ARW" IsChecked="True" Checked="ARW_Checked" Unchecked="ARW_Checked"/>
+            <CheckBox x:Name="CR2" Content=".CR2" IsChecked="True" Checked="CR2_Checked" Unchecked="CR2_Checked"/>
+            <CheckBox x:Name="NEF" Content=".NEF" IsChecked="True" Checked="NEF_Checked" Unchecked="NEF_Checked"/>
+            <CheckBox x:Name="ORF" Content=".ORF" IsChecked="True" Checked="ORF_Checked" Unchecked="ORF_Checked"/>
+            <CheckBox x:Name="RW2" Content=".RW2" IsChecked="True" Checked="RW2_Checked" Unchecked="RW2_Checked"/>
+            <CheckBox x:Name="RWL" Content=".RWL" IsChecked="True" Checked="RWL_Checked" Unchecked="RWL_Checked"/>
+            <CheckBox x:Name="SRW" Content=".SRW" IsChecked="True" Checked="SRW_Checked" Unchecked="SRW_Checked"/>
+            <CheckBox x:Name="AAE" Content=".AAE" IsChecked="True" Checked="AAE_Checked" Unchecked="AAE_Checked"/>
+        </ListBox>
+        <Label x:Name="image_ext_label" Content="Image Extensions" HorizontalAlignment="Left" Margin="32,259,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="videos_listBox" Margin="241,285,42,129" Grid.ColumnSpan="8">
+            <CheckBox x:Name="AVCI" Content=".AVCI" IsChecked="True" Checked="AVCI_Checked" Unchecked="AVCI_Checked"/>
+            <CheckBox x:Name="AVI" Content=".AVI" IsChecked="True" Checked="AVI_Checked" Unchecked="AVI_Checked"/>
+            <CheckBox x:Name="MOV" Content=".MOV" IsChecked="True" Checked="MOV_Checked" Unchecked="MOV_Checked"/>
+            <CheckBox x:Name="MP4" Content=".MP4" IsChecked="True" Checked="MP4_Checked" Unchecked="MP4_Checked"/>
+            <CheckBox x:Name="M4V" Content=".M4V" IsChecked="True" Checked="M4V_Checked" Unchecked="M4V_Checked"/>
+            <CheckBox x:Name="MPG" Content=".MPG" IsChecked="True" Checked="MPG_Checked" Unchecked="MPG_Checked"/>
+            <CheckBox x:Name="_3GP" Content=".3GP" IsChecked="True" Checked="_3GP_Checked" Unchecked="_3GP_Checked"/>
+            <CheckBox x:Name="_2GP" Content=".2GP" IsChecked="True" Checked="_2GP_Checked" Unchecked="_2GP_Checked"/>
+            <CheckBox x:Name="_3G2" Content=".3G2" IsChecked="True" Checked="_3G2_Checked" Unchecked="_3G2_Checked"/>
+        </ListBox>
+        <Label x:Name="videos_ext_label" Content="Video Extensions" HorizontalAlignment="Left" Margin="244,257,0,0" VerticalAlignment="Top" Grid.ColumnSpan="7" Width="145" Height="28"/>
+        <Button x:Name="Cancel_button" Content="Cancel" Grid.ColumnSpan="5" Grid.Column="1" HorizontalAlignment="Left" Margin="13,526,0,0" VerticalAlignment="Top" Width="98" Click="Cancel_button_Click"/>
+
+    </Grid>
+</Window>
