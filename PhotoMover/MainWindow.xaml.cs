@@ -38,6 +38,16 @@ namespace PhotoMover
             main = this;
             //pictureBox1.Source = Properties.Resources.camera_clipart;
             //progressbar1.Maximum = 100;
+
+            //Setup worker
+            worker = new BackgroundWorker();
+            worker.DoWork += new DoWorkEventHandler(Worker_DoWork);
+            worker.ProgressChanged += new ProgressChangedEventHandler(Worker_ProgressChanged);
+            worker.WorkerReportsProgress = true;
+            worker.WorkerSupportsCancellation = true;
+            worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(Worker_RunWorkerCompleted);
+            //worker.ReportProgress(0);
+            //progressbar1.Value = 0;
         }
         internal static MainWindow main;
         internal string Status
@@ -84,26 +94,20 @@ namespace PhotoMover
             {
                 MessageBox.Show("Please Select a Source Folder");
             }
-            if (destinationPath == null)
+            else if (destinationPath == null)
             {
                 MessageBox.Show("Please Select a Destination Folder");
             }
-            if(pictures_CheckBox.IsChecked==false && movies_checkBox.IsChecked==false)
+            else if(pictures_CheckBox.IsChecked==false && movies_checkBox.IsChecked==false)
             {
                 MessageBox.Show("Please Select what to organize");
             }
+            else
+            {
+                worker.RunWorkerAsync();
+                //startStatus();
+            }
 
-            //Setup worker
-            worker = new BackgroundWorker();
-            worker.DoWork += new DoWorkEventHandler(Worker_DoWork);
-            worker.ProgressChanged += new ProgressChangedEventHandler(Worker_ProgressChanged);
-            worker.WorkerReportsProgress = true;
-            worker.WorkerSupportsCancellation = true;
-            worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(Worker_RunWorkerCompleted);
-            //worker.ReportProgress(0);
-            //progressbar1.Value = 0;
-            worker.RunWorkerAsync();
-            //startStatus();
         }
 
         /*public void startStatus()

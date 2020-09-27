@@ -27,3 +27,6 @@ C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netco
 C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.csproj.CopyComplete
 C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.dll
 C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.pdb
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.csprojAssemblyReference.cache
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\PhotoMover\obj\Debug\netcoreapp3.0\PhotoMover.genruntimeconfig.cache
