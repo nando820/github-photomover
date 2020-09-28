@@ -1,0 +1,24 @@
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\MainWindow.g.cs
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\App.g.cs
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover_MarkupCompile.cache
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover_MarkupCompile.lref
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Media Mover.exe.config
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Media Mover.exe
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Media Mover.pdb
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\MetadataExtractor.dll
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Ookii.Dialogs.dll
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\System.Drawing.Common.dll
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\XmpCore.dll
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\MetadataExtractor.xml
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Ookii.Dialogs.xml
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\bin\Debug\XmpCore.xml
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\MainWindow.baml
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.g.resources
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media_Mover.Properties.Resources.resources
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.csproj.GenerateResource.cache
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.csproj.CoreCompileInputs.cache
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.csproj.CopyComplete
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.exe
+C:\Users\ferna\Documents\Programming\C-Sharp_Projects\Media Mover\obj\Debug\Media Mover.pdb
